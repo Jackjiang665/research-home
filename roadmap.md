@@ -98,3 +98,79 @@
 - 原图/扰动图对比表。
 - hidden-state UQ 与传统 UQ 对比。
 - 一份结构清楚的实验报告。
+
+## 4-Week Plan
+
+### Week 1: VLM UQ 小闭环
+
+目标：把当前 probe 变成可复用的小批量实验。
+
+学习：
+- hidden state、attention、logits、entropy、PPL。
+- Qwen-VL / LLaVA 这类 VLM 的基本结构。
+
+实验：
+- 跑 `20` 张图 × 原图/8 种扰动 × 描述任务。
+- 保存回答、hidden-state confidence、uncertainty、扰动类型。
+- 记录典型案例：正常、轻微偏移、严重偏移。
+
+产出：
+- 一个批量实验脚本。
+- 一个 `comparison.csv/json`。
+- 一页实验观察。
+
+### Week 2: 传统 UQ 与正确性判断
+
+目标：把 hidden-state UQ 和传统指标放在一起比较。
+
+学习：
+- predictive entropy。
+- maximum softmax probability。
+- perplexity。
+- calibration 基本概念。
+
+实验：
+- 给批量实验补充 entropy / PPL / MSP。
+- 使用 API 裁判或人工抽样判断描述质量。
+- 比较正确/偏移/错误回答的分数分布。
+
+产出：
+- 指标对比表。
+- 3-5 个典型案例分析。
+- 一页 “hidden-state UQ 是否有用” 的阶段结论。
+
+### Week 3: 小模型训练建立直觉
+
+目标：不要只会调用大模型，开始理解模型训练过程。
+
+学习：
+- PyTorch Dataset / DataLoader。
+- loss、optimizer、train/eval。
+- CNN 基础。
+
+练习：
+- 训练一个 MNIST 或 CIFAR-10 CNN。
+- 记录训练曲线、准确率、错误样本。
+- 写一页笔记：训练流程到底发生了什么。
+
+产出：
+- 一个可跑的小模型训练项目。
+- 一页 “从输入到 logits” 的解释。
+
+### Week 4: Transformer 与具身连接
+
+目标：把模型内部理解和机器人长期方向接起来。
+
+学习：
+- token、embedding、self-attention、hidden state。
+- 具身任务执行 pipeline：感知、规划、技能、控制。
+- active perception 基本想法。
+
+练习：
+- 跑一个 tiny Transformer 或字符级语言模型。
+- 画出当前 VLM UQ 模块如何接入机器人执行前检查。
+
+产出：
+- tiny Transformer 笔记。
+- 一个 “VLM reliability -> robot recovery” 的系统草图。
+- 下个月计划。

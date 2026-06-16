@@ -1,5 +1,7 @@
 # Hanchen Jiang
 
+[中文版本](README.zh-CN.md)
+
 Incoming graduate student at BUPT. Electrical Engineering background. Robotics builder.
 
 I care about embodied AI systems that can work in the real world: robots that understand tasks, judge whether their perception and decisions are reliable, and recover when they are uncertain or wrong.
