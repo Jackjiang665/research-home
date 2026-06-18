@@ -1,68 +1,60 @@
-# Hanchen Jiang
+<div align="center">
 
-[中文版本](README.zh-CN.md)
+# 姜函辰 · Hanchen Jiang
 
-Incoming graduate student at BUPT. Electrical Engineering background. Robotics builder.
+### 具身智能 · 机器人可靠性 · 多模态感知
 
-I care about embodied AI systems that can work in the real world: robots that understand tasks, judge whether their perception and decisions are reliable, and recover when they are uncertain or wrong.
+⚡ *让机器人知道自己什么时候不确定*
 
-## Current Focus
+</div>
 
-I am currently using **VLM uncertainty estimation** as my entry point into embodied AI reliability.
+---
 
-My active research question:
+## 👋 关于我
 
-> Can hidden-state dynamics help detect and attribute VLM output uncertainty under visual perturbations, and can this become a reliability module before robot execution?
+中国地质大学（北京）电气工程及其自动化 2026 届本科毕业生，已保研至**北京邮电大学**，2026 年 9 月入学。
 
-Current project:
+本科期间担任机器人队队长，常年泡在实验室，做过无人机、移动机器人、物流搬运机器人、农业机器人等项目。软硬通吃——从 STM32、OpenMV、SolidWorks 机械结构，到 ROS、Gazebo 仿真、Python/C++ 开发都摸过。
 
-[VLM Uncertainty and Visual Perturbation Attribution](projects/vlm-uncertainty.md)
+研究生阶段想扎根**具身智能**方向，关注一个核心问题：
 
-## Research Interests
+> 机器人如何判断自己的感知和决策是否可靠，在不确定时如何恢复？
 
-| Area | What I Care About |
-|---|---|
-| Embodied AI Systems | Connecting perception, planning, skills, and control in real robot tasks |
-| Robot Self-Diagnosis | Letting robots know when and why they may fail |
-| Adaptive Recovery | Re-observe, change viewpoint, ask for confirmation, or re-plan when uncertain |
-| Multimodal Reliability | Evaluating VLM/VLA outputs beyond benchmark accuracy |
-| Model Deployment | Understanding reliability changes after compression, quantization, or edge deployment |
+---
 
-## Active Projects
+## 🔬 研究兴趣
 
-| Project | Status | Description |
-|---|---|---|
-| [VLM Uncertainty](projects/vlm-uncertainty.md) | Active | Hidden-state dynamics for VLM confidence under visual perturbations |
-| [Mini Model Training](projects/mini-model-training.md) | Planned | Training small models to build intuition for deep learning and transformers |
-| [Robot Recovery](projects/robot-recovery.md) | Ideas | Uncertainty-aware robot behavior and adaptive recovery strategies |
+`具身智能系统` `VLM/VLA 可靠性` `机器人自我诊断` `不确定性估计` `自适应恢复` `模型部署可靠性`
 
-## Background
+---
 
-- B.Eng. in Electrical Engineering and Automation, China University of Geosciences (Beijing)
-- Incoming graduate student at Beijing University of Posts and Telecommunications, starting in 2026.09
-- Robotics team leader during undergraduate study
-- Experience with UAVs, mobile robots, logistics robots, agricultural robots, embedded systems, STM32, OpenMV, and robot competitions
+## 🎯 当前在做
 
-## Working System
+以 **VLM 输出不确定性估计** 为切入点，研究视觉扰动下多模态模型输出的可靠性判断方法，希望最终能成为机器人执行前的安全校验模块。
 
-This repository is my research workspace, not a single code project.
+---
 
-- [Roadmap](roadmap.md): 3-6 month plan and long-term direction candidates
-- [Weekly Plan](weekly.md): current weekly focus
-- [Backlog](backlog.md): ideas parked for later
-- [Logs](logs/2026-06.md): monthly work and reflection records
-- [Paper Notes](papers/): paper reading notes
-- [Notes](notes/): deep learning, VLM, uncertainty, and embodied AI notes
+## 🏆 本科亮点
 
-## Near-Term Plan
+| 类别 | 经历 |
+|:---|:---|
+| 竞赛 | RoboCup 机器人世界杯、多项机器人竞赛 |
+| 项目 | 无人机自主导航（Ego-planner）、移动机器人、物流机器人、农业机器人 |
+| 技术 | STM32 / OpenMV / ROS / Gazebo / SolidWorks / Python / C++ |
+| 荣誉 | 专业排名 1/33（推免）、GPA 3.46/4.0 |
 
-1. Build a complete small-scale experiment for VLM uncertainty under visual perturbations.
-2. Study deep learning, transformers, VLMs, and uncertainty fundamentals.
-3. Train small models to develop real model intuition.
-4. Gradually connect VLM reliability to robot perception, self-diagnosis, and recovery.
+---
 
-## Principle
+## 🗓️ 每日研究日志
 
-Direction can stay open. Execution must stay focused.
+→ **[2026 年 6 月](daily/2026-06.md)**
 
-I want my research to eventually serve real robot systems, not only offline metrics.
+---
+
+<div align="center">
+
+📫 **1482101755@qq.com** · [GitHub](https://github.com/Jackjiang665)
+
+*每天前进一小步*
+
+</div>
